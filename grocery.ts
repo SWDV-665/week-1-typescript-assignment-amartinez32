@@ -3,15 +3,22 @@ class Grocery {
   itemList: string;
     constructor(public name: Array<string>, public quantity: Array<any>, public price: Array<any>, public aisle: Array<number>) {
       this.itemList = `${name} ${quantity} ${price} ${aisle}`;
-
-       
+        }
       
     }
 
- 
+    interface GroceryList {
+        name: string;
+        quantity: number;
+        price:number;
+        aisle: number;
+    }
+
+  
   
   
   let groceryList= new Grocery(["Paper Towels", "Avacado", "Milk", "Cereal"], [1, 3, 1, 3], [8.79, 4.99, 1.23, 6.75], [3,13,8,2]);
+
  
   
   
